@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bastión Gym · Gimnasio de barrio en Cali (página de demostración)</title>
+  <meta name="description" content="Página de demostración de un gimnasio ficticio en Cali: planes con precio, horario, clases, la sala y pre-inscripción por WhatsApp. Hecha por José David Rodríguez.">
+  <!-- Es un negocio ficticio: no debe aparecer en Google como si existiera. -->
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1f232b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bastión Gym · página de demostración para gimnasios">
+  <meta property="og:description" content="Así se vería la página de su gimnasio: planes con precio, horario, clases y WhatsApp.">
+  <meta property="og:image" content="https://josed235.github.io/gimnasio-demo/img/og.jpg">
+  <meta property="og:url" content="https://josed235.github.io/gimnasio-demo/">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fuentes/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="img/gym-oscuro.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#planes">Saltar a los planes</a>
+
+  <p class="aviso-demo">
+    <strong>Página de demostración.</strong> Bastión Gym es un gimnasio ficticio. Los botones de WhatsApp abren un chat con José David, quien hizo la página.
+  </p>
+
+  <header class="encabezado">
+    <a class="marca" href="#inicio" aria-label="Bastión Gym, inicio">
+      <span class="marca__disco" aria-hidden="true"></span>
+      <span class="marca__nombre">Bastión</span>
+    </a>
+    <p class="estado" data-estado aria-live="polite">Horario de hoy</p>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#planes">Planes</a>
+      <a href="#horario">Horario</a>
+      <a href="#clases">Clases</a>
+      <a href="#sala">La sala</a>
+      <a href="#ubicacion">Cómo llegar</a>
+    </nav>
+    <a class="boton boton--wa boton--chico" data-wa="Hola Bastión, quiero información de los planes." href="#">WhatsApp</a>
+  </header>
+
+  <main id="inicio">
+    <section class="portada">
+      <div class="portada__texto">
+        <h1 class="titular">
+          <span>Entrena</span>
+          <span>cerca.</span>
+          <span class="titular__rojo">Paga lo justo.</span>
+        </h1>
+        <p class="portada__bajada">Pesas, cardio y clases en San Fernando, a dos cuadras del parque. Sin permanencia: pague el día, la quincena o el mes.</p>
+        <div class="acciones">
+          <a class="boton boton--rojo" href="#planes">Ver planes y precios</a>
+          <a class="boton boton--wa" data-wa="Hola Bastión, quiero ir a conocer el gimnasio. ¿A qué hora puedo pasar?" href="#">Escribir por WhatsApp</a>
+        </div>
+        <p class="portada__direccion">Calle 5 # 00-00, San Fernando, Cali <span>(dirección de ejemplo)</span></p>
+      </div>
+      <figure class="portada__foto">
+        <img src="img/gym-oscuro.webp" alt="Sala de máquinas del gimnasio con luz baja" width="1400" height="933" fetchpriority="high">
+        <p class="sello" aria-label="Plan mes: 80 mil pesos">
+          <span class="sello__arriba">Plan mes</span>
+          <span class="sello__precio">$80.000</span>
+          <span class="sello__abajo">sin inscripción</span>
+        </p>
+      </figure>
+    </section>
+
+    <p class="cinta">
+      <span>Noviembre: inscripción gratis</span>
+      <span>Primer día de prueba sin costo</span>
+      <span>Sin cláusula de permanencia</span>
+    </p>
+
+    <section class="seccion" id="planes" aria-labelledby="t-planes">
+      <div class="seccion__cabeza">
+        <h2 class="titulo" id="t-planes">El tablero</h2>
+        <p>Precios de noviembre. Toque «Lo quiero» y le llega a recepción por WhatsApp con el plan ya escrito.</p>
+      </div>
+      <ul class="tablero">
+        <li class="plan">
+          <h3 class="plan__nombre">Día</h3>
+          <p class="plan__detalle">Una entrada, todo el gimnasio. Para probar o si viene de visita.</p>
+          <p class="plan__precio">$10.000</p>
+          <a class="boton boton--linea" data-wa="Hola Bastión, quiero un pase de día ($10.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">Quincena</h3>
+          <p class="plan__detalle">15 días seguidos, con clases incluidas.</p>
+          <p class="plan__precio">$45.000</p>
+          <a class="boton boton--linea" data-wa="Hola Bastión, quiero el plan Quincena ($45.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan plan--destacado">
+          <p class="plan__etiqueta">El que más se lleva</p>
+          <h3 class="plan__nombre">Mes</h3>
+          <p class="plan__detalle">30 días con clases, valoración física al entrar y rutina del entrenador de sala.</p>
+          <p class="plan__precio">$80.000</p>
+          <a class="boton boton--rojo" data-wa="Hola Bastión, quiero el plan Mes ($80.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">Trimestre</h3>
+          <p class="plan__detalle">90 días. Ahorra $25.000 frente a pagar tres meses. Se puede congelar 15 días si viaja.</p>
+          <p class="plan__precio">$215.000</p>
+          <a class="boton boton--linea" data-wa="Hola Bastión, quiero el plan Trimestre ($215.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">Tiquetera</h3>
+          <p class="plan__detalle">12 entradas para usar en 45 días. Para quien viene dos o tres veces por semana.</p>
+          <p class="plan__precio">$75.000</p>
+          <a class="boton boton--linea" data-wa="Hola Bastión, quiero la Tiquetera de 12 entradas ($75.000)." href="#">Lo quiero</a>
+        </li>
+      </ul>
+      <p class="nota">Pagos en efectivo, Nequi, Daviplata, Bre-B o tarjeta en recepción.</p>
+    </section>
+
+    <section class="seccion seccion--clara" id="horario" aria-labelledby="t-horario">
+      <div class="seccion__cabeza">
+        <h2 class="titulo" id="t-horario">Horario</h2>
+        <p>La sala está más tranquila entre las 10:00 a. m. y las 4:00 p. m. El día de hoy va marcado.</p>
+      </div>
+      <table class="semana">
+        <caption class="visualmente-oculto">Horario de atención por día</caption>
+        <tbody>
+          <tr data-dia="1"><th scope="row">Lunes</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
+          <tr data-dia="2"><th scope="row">Martes</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
+          <tr data-dia="3"><th scope="row">Miércoles</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
+          <tr data-dia="4"><th scope="row">Jueves</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
+          <tr data-dia="5"><th scope="row">Viernes</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
+          <tr data-dia="6"><th scope="row">Sábado</th><td>7:00 a. m. – 3:00 p. m.</td></tr>
+          <tr data-dia="0"><th scope="row">Domingo y festivos</th><td>8:00 a. m. – 12:00 m.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="seccion" id="clases" aria-labelledby="t-clases">
+      <div class="seccion__cabeza">
+        <h2 class="titulo" id="t-clases">Clases de la semana</h2>
+        <p>Incluidas desde la quincena. Cupo de 15 personas: aparte su puesto por WhatsApp.</p>
+      </div>
+      <ul class="leyenda" aria-label="Tipos de clase">
+        <li class="tipo tipo--fuerza">Fuerza</li>
+        <li class="tipo tipo--cardio">Cardio</li>
+        <li class="tipo tipo--funcional">Funcional</li>
+        <li class="tipo tipo--movilidad">Movilidad</li>
+      </ul>
+      <div class="clases">
+        <div class="clases__dia">
+          <h3>Lunes</h3>
+          <p class="clase tipo--funcional"><time>6:00 a. m.</time> Funcional</p>
+          <p class="clase tipo--cardio"><time>7:00 p. m.</time> Rumba</p>
+        </div>
+        <div class="clases__dia">
+          <h3>Martes</h3>
+          <p class="clase tipo--fuerza"><time>6:00 a. m.</time> Glúteo y pierna</p>
+          <p class="clase tipo--movilidad"><time>6:30 p. m.</time> Estiramiento</p>
+        </div>
+        <div class="clases__dia">
+          <h3>Miércoles</h3>
+          <p class="clase tipo--funcional"><time>6:00 a. m.</time> Funcional</p>
+          <p class="clase tipo--cardio"><time>7:00 p. m.</time> Spinning</p>
+        </div>
+        <div class="clases__dia">
+          <h3>Jueves</h3>
+          <p class="clase tipo--fuerza"><time>6:00 a. m.</time> Tren superior</p>
+          <p class="clase tipo--cardio"><time>7:00 p. m.</time> Rumba</p>
+        </div>
+        <div class="clases__dia">
+          <h3>Viernes</h3>
+          <p class="clase tipo--funcional"><time>6:00 a. m.</time> Circuito</p>
+          <p class="clase tipo--cardio"><time>6:30 p. m.</time> Spinning</p>
+        </div>
+        <div class="clases__dia">
+          <h3>Sábado</h3>
+          <p class="clase tipo--funcional"><time>8:00 a. m.</time> Funcional en pareja</p>
+          <p class="clase tipo--movilidad"><time>10:00 a. m.</time> Movilidad</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara" id="sala" aria-labelledby="t-sala">
+      <div class="seccion__cabeza">
+        <h2 class="titulo" id="t-sala">La sala</h2>
+        <p>Lo que encuentra al entrar. En la página de su gimnasio van fotos de su sala.</p>
+      </div>
+      <div class="galeria">
+        <figure class="galeria__foto galeria__foto--alta"><img src="img/gym-fila.webp" alt="Fila de máquinas de musculación" width="934" height="1400" loading="lazy"><figcaption>Máquinas</figcaption></figure>
+        <figure class="galeria__foto"><img src="img/jalon-pecho.webp" alt="Mujer haciendo jalón al pecho en la polea" width="1400" height="932" loading="lazy"><figcaption>Jalón y poleas</figcaption></figure>
+        <figure class="galeria__foto"><img src="img/caminadoras.webp" alt="Caminadoras en fila" width="1050" height="1400" loading="lazy"><figcaption>Cardio</figcaption></figure>
+        <figure class="galeria__foto galeria__foto--alta"><img src="img/bicis-rojas.webp" alt="Fila de bicicletas estáticas rojas" width="933" height="1400" loading="lazy"><figcaption>Spinning</figcaption></figure>
+        <figure class="galeria__foto"><img src="img/banco.webp" alt="Banco de pesas sobre piso de caucho" width="1400" height="1400" loading="lazy"><figcaption>Peso libre</figcaption></figure>
+        <figure class="galeria__foto"><img src="img/prensa-piernas.webp" alt="Máquina de prensa de piernas" width="1022" height="1400" loading="lazy"><figcaption>Prensa</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="seccion" id="inscripcion" aria-labelledby="t-inscripcion">
+      <div class="inscripcion">
+        <div>
+          <h2 class="titulo" id="t-inscripcion">Aparte su cupo</h2>
+          <p>Llene esto y le llega a recepción por WhatsApp. Le confirmamos el horario y su día de prueba.</p>
+        </div>
+        <form class="formulario" data-formulario novalidate>
+          <label class="campo">
+            <span>Nombre</span>
+            <input name="nombre" autocomplete="name" required>
+          </label>
+          <label class="campo">
+            <span>Plan que le interesa</span>
+            <select name="plan">
+              <option>Mes ($80.000)</option>
+              <option>Día ($10.000)</option>
+              <option>Quincena ($45.000)</option>
+              <option>Trimestre ($215.000)</option>
+              <option>Tiquetera ($75.000)</option>
+              <option>Todavía no sé</option>
+            </select>
+          </label>
+          <fieldset class="campo">
+            <legend>¿A qué hora vendría?</legend>
+            <div class="opciones">
+              <label><input type="radio" name="jornada" value="mañana" checked> Mañana</label>
+              <label><input type="radio" name="jornada" value="mediodía"> Mediodía</label>
+              <label><input type="radio" name="jornada" value="noche"> Noche</label>
+            </div>
+          </fieldset>
+          <label class="autoriza">
+            <input type="checkbox" name="autoriza" required>
+            <span>Autorizo a Bastión Gym a usar mi nombre para responder esta solicitud (Ley 1581 de 2012).</span>
+          </label>
+          <p class="formulario__error" data-error role="alert" hidden></p>
+          <button class="boton boton--wa" type="submit">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara" id="ubicacion" aria-labelledby="t-ubicacion">
+      <div class="seccion__cabeza">
+        <h2 class="titulo" id="t-ubicacion">Cómo llegar</h2>
+        <p>Calle 5 # 00-00, San Fernando, Cali (dirección de ejemplo). Parqueadero para motos y bicicletas en la entrada.</p>
+      </div>
+      <div class="llegar">
+        <a class="boton boton--linea-oscura" href="https://www.google.com/maps/search/?api=1&amp;query=San+Fernando+Cali" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        <a class="boton boton--linea-oscura" href="https://waze.com/ul?q=San%20Fernando%20Cali" target="_blank" rel="noopener">Abrir en Waze</a>
+      </div>
+      <div class="preguntas">
+        <h3 class="subtitulo">Lo que más preguntan</h3>
+        <details>
+          <summary>¿Hay que pagar inscripción?</summary>
+          <p>En noviembre no. El resto del año, $20.000 una sola vez.</p>
+        </details>
+        <details>
+          <summary>¿Puedo congelar el plan?</summary>
+          <p>El trimestre se congela hasta 15 días, avisando por WhatsApp antes de viajar.</p>
+        </details>
+        <details>
+          <summary>¿Me hacen rutina?</summary>
+          <p>Sí. Con el plan mes o el trimestre, el entrenador de sala le hace la valoración y la rutina del primer mes.</p>
+        </details>
+        <details>
+          <summary>¿Puedo ir a probar?</summary>
+          <p>El primer día es gratis. Escríbanos para apartar la hora.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__gym">
+      <p class="marca marca--pie"><span class="marca__disco" aria-hidden="true"></span><span class="marca__nombre">Bastión</span></p>
+      <p>Gimnasio ficticio de demostración. Fotos de Unsplash y Pexels con licencia libre.</p>
+    </div>
+    <div class="pie__autor">
+      <h2 class="subtitulo">¿Quiere una página así para su gimnasio?</h2>
+      <p>Con sus planes, su horario, sus fotos y su WhatsApp, lista en 5 días hábiles.</p>
+      <a class="boton boton--wa" data-wa-autor href="#">Hablar con José David</a>
+      <p class="pie__firma">José David Rodríguez Pinilla · Desarrollador web en Cali · <a href="https://josed235.github.io">Portafolio</a></p>
+    </div>
+  </footer>
+</body>
+</html>
