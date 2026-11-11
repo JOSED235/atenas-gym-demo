@@ -19,8 +19,8 @@
   --concreto: oklch(0.93 0.008 90);
   --tinta: oklch(0.24 0.02 255);
   --tinta-2: oklch(0.42 0.02 255);
-  --rojo: oklch(0.56 0.205 27);       /* disco de 25 kg: acción principal */
-  --rojo-vivo: oklch(0.66 0.21 27);    /* rojo sobre fondo oscuro, para texto grande */
+  --rojo: oklch(0.72 0.19 50);      /* naranja de Atenas Gym */       /* disco de 25 kg: acción principal */
+  --rojo-vivo: oklch(0.76 0.18 55);    /* rojo sobre fondo oscuro, para texto grande */
   --azul: oklch(0.6 0.16 255);         /* disco de 20 kg */
   --amarillo: oklch(0.87 0.17 95);     /* disco de 15 kg: cinta y etiquetas */
   --verde: oklch(0.76 0.17 150);       /* disco de 10 kg: abierto y WhatsApp */
@@ -105,7 +105,10 @@ h1, h2, h3, p, figure { margin: 0; }
   background: radial-gradient(circle, var(--caucho) 0 22%, var(--rojo) 23% 100%);
   box-shadow: inset 0 0 0 3px oklch(0.45 0.18 27);
 }
-.marca__nombre { font-weight: 900; font-stretch: 62%; font-size: var(--t-3); text-transform: uppercase; letter-spacing: 0.02em; line-height: 1; }
+.marca__gym { color: var(--rojo-vivo); }
+.marca__nombre { white-space: nowrap; }
+.marca__nombre { font-weight: 900; font-stretch: 125%; font-size: var(--t-3); text-transform: uppercase; letter-spacing: 0.02em; line-height: 1; }
+@media (max-width: 30rem) { .marca__nombre { font-stretch: 100%; } }
 .estado {
   font-size: var(--t-0);
   color: var(--tiza-2);
@@ -145,8 +148,8 @@ h1, h2, h3, p, figure { margin: 0; }
   transition: transform 0.18s var(--curva), background-color 0.18s var(--curva);
 }
 .boton:active { transform: translate(2px, 2px); }
-.boton--rojo { background: var(--rojo); border-color: var(--rojo); color: var(--tiza); }
-.boton--rojo:hover { background: oklch(0.5 0.2 27); }
+.boton--rojo { background: var(--rojo); border-color: var(--rojo); color: var(--tinta); }
+.boton--rojo:hover { background: oklch(0.78 0.17 55); }
 .boton--wa { background: var(--verde); border-color: var(--verde); color: var(--tinta); }
 .boton--wa:hover { background: oklch(0.82 0.16 150); }
 .boton--linea { color: var(--tiza); background: transparent; }

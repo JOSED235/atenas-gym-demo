@@ -17,17 +17,17 @@ test('formatea la hora en 12 horas', () => {
 });
 
 test('lunes a las 5:00 a. m. abre justo', () => {
-  assert.deepEqual(estado(utc('2026-11-02T10:00:00')), { abierto: true, texto: 'Abierto hasta las 10:00 p. m.' });
+  assert.deepEqual(estado(utc('2026-11-02T10:00:00')), { abierto: true, texto: 'Abierto hasta las 11:00 p. m.' });
 });
 
 test('lunes a las 4:59 a. m. todavía está cerrado', () => {
   assert.deepEqual(estado(utc('2026-11-02T09:59:00')), { abierto: false, texto: 'Cerrado · abre hoy a las 5:00 a. m.' });
 });
 
-test('a las 10:00 p. m. cierra y anuncia el día siguiente', () => {
-  assert.deepEqual(estado(utc('2026-11-03T03:00:00')), { abierto: false, texto: 'Cerrado · abre mañana a las 5:00 a. m.' });
+test('a las 11:00 p. m. cierra y anuncia el día siguiente', () => {
+  assert.deepEqual(estado(utc('2026-11-03T04:00:00')), { abierto: false, texto: 'Cerrado · abre mañana a las 5:00 a. m.' });
 });
 
 test('el sábado después de las 3:00 p. m. anuncia el horario del domingo', () => {
-  assert.deepEqual(estado(utc('2026-11-07T20:30:00')), { abierto: false, texto: 'Cerrado · abre mañana a las 8:00 a. m.' });
+  assert.deepEqual(estado(utc('2026-11-07T20:30:00')), { abierto: false, texto: 'Cerrado · abre mañana a las 9:00 a. m.' });
 });

@@ -3,13 +3,13 @@
 // shortcut: los festivos no se calculan (se tratan como un día normal); para un cliente real, agregar su lista de festivos del año.
 
 export const HORARIO = {
-  0: { abre: 8 * 60, cierra: 12 * 60 },
-  1: { abre: 5 * 60, cierra: 22 * 60 },
-  2: { abre: 5 * 60, cierra: 22 * 60 },
-  3: { abre: 5 * 60, cierra: 22 * 60 },
-  4: { abre: 5 * 60, cierra: 22 * 60 },
-  5: { abre: 5 * 60, cierra: 22 * 60 },
-  6: { abre: 7 * 60, cierra: 15 * 60 },
+  0: { abre: 9 * 60, cierra: 14 * 60 },
+  1: { abre: 5 * 60, cierra: 23 * 60 },
+  2: { abre: 5 * 60, cierra: 23 * 60 },
+  3: { abre: 5 * 60, cierra: 23 * 60 },
+  4: { abre: 5 * 60, cierra: 23 * 60 },
+  5: { abre: 5 * 60, cierra: 23 * 60 },
+  6: { abre: 8 * 60, cierra: 15 * 60 },
 };
 
 export const NOMBRES_DIA = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];

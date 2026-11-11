@@ -6,12 +6,12 @@ const enlaceWa = (texto) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent
 
 // Botones con el mensaje ya escrito.
 for (const a of document.querySelectorAll('[data-wa]')) {
-  a.href = enlaceWa(`${a.dataset.wa} (Lo escribo desde la página de demostración)`);
+  a.href = enlaceWa(`${a.dataset.wa} (Lo escribo desde la maqueta de Atenas Gym)`);
   a.target = '_blank';
   a.rel = 'noopener';
 }
 for (const a of document.querySelectorAll('[data-wa-autor]')) {
-  a.href = enlaceWa('Hola José David, vi la página de demostración de Bastión Gym y quiero una para mi gimnasio.');
+  a.href = enlaceWa('Hola José David, vi la maqueta de la página de Atenas Gym y quiero hablar de ella.');
   a.target = '_blank';
   a.rel = 'noopener';
 }
@@ -41,8 +41,8 @@ formulario.addEventListener('submit', (evento) => {
   if (!nombre) return mostrarError('Escriba su nombre para que recepción sepa a quién responder.', 'nombre');
   if (!datos.get('autoriza')) return mostrarError('Marque la autorización para poder enviar su solicitud.', 'autoriza');
   error.hidden = true;
-  const texto = `Hola Bastión, soy ${nombre}. Me interesa el plan ${datos.get('plan')} y vendría en la ${datos.get('jornada')}. ¿Me confirman el día de prueba?`;
-  window.open(enlaceWa(`${texto} (Lo escribo desde la página de demostración)`), '_blank', 'noopener');
+  const texto = `Hola Atenas Gym, soy ${nombre}. Me interesa el plan ${datos.get('plan')} y vendría en la ${datos.get('jornada')}. ¿Me confirman el día de prueba?`;
+  window.open(enlaceWa(`${texto} (Lo escribo desde la maqueta de Atenas Gym)`), '_blank', 'noopener');
 });
 
 function mostrarError(mensaje, campo) {

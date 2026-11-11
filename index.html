@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bastión Gym · Gimnasio de barrio en Cali (página de demostración)</title>
-  <meta name="description" content="Página de demostración de un gimnasio ficticio en Cali: planes con precio, horario, clases, la sala y pre-inscripción por WhatsApp. Hecha por José David Rodríguez.">
-  <!-- Es un negocio ficticio: no debe aparecer en Google como si existiera. -->
+  <title>Atenas Gym · Chapinero, Cali (maqueta de propuesta)</title>
+  <meta name="description" content="Maqueta de propuesta de página web para Atenas Gym (Chapinero, Cali), hecha por José David Rodríguez. No es la página oficial del gimnasio.">
+  <!-- Maqueta para mostrarle al gimnasio: no debe aparecer en Google como si fuera su página oficial. -->
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#1f232b">
+  <link rel="icon" href="img/logo.png" type="image/png">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Bastión Gym · página de demostración para gimnasios">
-  <meta property="og:description" content="Así se vería la página de su gimnasio: planes con precio, horario, clases y WhatsApp.">
-  <meta property="og:image" content="https://josed235.github.io/gimnasio-demo/img/og.jpg">
-  <meta property="og:url" content="https://josed235.github.io/gimnasio-demo/">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Atenas Gym · maqueta de su página web">
+  <meta property="og:description" content="Así se vería la página de Atenas Gym: planes, horario, clases grupales, la sala y WhatsApp.">
+  <meta property="og:image" content="https://josed235.github.io/atenas-gym-demo/img/og.jpg">
+  <meta property="og:url" content="https://josed235.github.io/atenas-gym-demo/">
   <link rel="preload" href="fuentes/archivo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="img/gym-oscuro.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="css/estilos.css">
@@ -23,13 +23,12 @@
   <a class="saltar" href="#planes">Saltar a los planes</a>
 
   <p class="aviso-demo">
-    <strong>Página de demostración.</strong> Bastión Gym es un gimnasio ficticio. Los botones de WhatsApp abren un chat con José David, quien hizo la página.
+    <strong>Maqueta de propuesta para Atenas Gym.</strong> No es su página oficial: precios y horario son los de su Instagram; clases y fotos son de ejemplo, y los botones de WhatsApp abren un chat con José David, quien la hizo.
   </p>
 
   <header class="encabezado">
-    <a class="marca" href="#inicio" aria-label="Bastión Gym, inicio">
-      <span class="marca__disco" aria-hidden="true"></span>
-      <span class="marca__nombre">Bastión</span>
+    <a class="marca" href="#inicio" aria-label="Atenas Gym, inicio">
+      <span class="marca__nombre">Atenas <span class="marca__gym">Gym</span></span>
     </a>
     <p class="estado" data-estado aria-live="polite">Horario de hoy</p>
     <nav class="menu" aria-label="Secciones">
@@ -39,104 +38,140 @@
       <a href="#sala">La sala</a>
       <a href="#ubicacion">Cómo llegar</a>
     </nav>
-    <a class="boton boton--wa boton--chico" data-wa="Hola Bastión, quiero información de los planes." href="#">WhatsApp</a>
+    <a class="boton boton--wa boton--chico" data-wa="Hola Atenas Gym, quiero información de los planes." href="#">WhatsApp</a>
   </header>
 
   <main id="inicio">
     <section class="portada">
       <div class="portada__texto">
         <h1 class="titular">
-          <span>Entrena</span>
-          <span>cerca.</span>
-          <span class="titular__rojo">Paga lo justo.</span>
+          <span>Disciplina</span>
+          <span>que se vuelve</span>
+          <span class="titular__rojo">resultados.</span>
         </h1>
-        <p class="portada__bajada">Pesas, cardio y clases en San Fernando, a dos cuadras del parque. Sin permanencia: pague el día, la quincena o el mes.</p>
+        <p class="portada__bajada">1.400 m² con máquinas importadas, peso libre, cardio y clases grupales en Chapinero. Parqueadero privado y entrenamiento personalizado.</p>
         <div class="acciones">
           <a class="boton boton--rojo" href="#planes">Ver planes y precios</a>
-          <a class="boton boton--wa" data-wa="Hola Bastión, quiero ir a conocer el gimnasio. ¿A qué hora puedo pasar?" href="#">Escribir por WhatsApp</a>
+          <a class="boton boton--wa" data-wa="Hola Atenas Gym, quiero ir a conocer el gimnasio. ¿A qué hora puedo pasar?" href="#">Escribir por WhatsApp</a>
         </div>
-        <p class="portada__direccion">Calle 5 # 00-00, San Fernando, Cali <span>(dirección de ejemplo)</span></p>
+        <p class="portada__direccion">Cra. 15 # 39-57, Chapinero, Cali</p>
       </div>
       <figure class="portada__foto">
         <img src="img/gym-oscuro.webp" alt="Sala de máquinas del gimnasio con luz baja" width="1400" height="933" fetchpriority="high">
-        <p class="sello" aria-label="Plan mes: 80 mil pesos">
+        <p class="sello" aria-label="Plan mes: 78 mil pesos">
           <span class="sello__arriba">Plan mes</span>
-          <span class="sello__precio">$80.000</span>
-          <span class="sello__abajo">sin inscripción</span>
+          <span class="sello__precio">$78.000</span>
+          <span class="sello__abajo">1.400 m²</span>
         </p>
       </figure>
     </section>
 
     <p class="cinta">
-      <span>Noviembre: inscripción gratis</span>
-      <span>Primer día de prueba sin costo</span>
-      <span>Sin cláusula de permanencia</span>
+      <span>1.400 m² de entrenamiento</span>
+      <span>Máquinas importadas</span>
+      <span>Parqueadero privado</span>
     </p>
 
     <section class="seccion" id="planes" aria-labelledby="t-planes">
       <div class="seccion__cabeza">
         <h2 class="titulo" id="t-planes">El tablero</h2>
-        <p>Precios de noviembre. Toque «Lo quiero» y le llega a recepción por WhatsApp con el plan ya escrito.</p>
+        <p>Toque «Lo quiero» y le llega a recepción por WhatsApp con el plan ya escrito. Tarifas 2026.</p>
       </div>
       <ul class="tablero">
         <li class="plan">
           <h3 class="plan__nombre">Día</h3>
           <p class="plan__detalle">Una entrada, todo el gimnasio. Para probar o si viene de visita.</p>
-          <p class="plan__precio">$10.000</p>
-          <a class="boton boton--linea" data-wa="Hola Bastión, quiero un pase de día ($10.000)." href="#">Lo quiero</a>
+          <p class="plan__precio">$13.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero un pase de día ($13.000)." href="#">Lo quiero</a>
         </li>
         <li class="plan">
-          <h3 class="plan__nombre">Quincena</h3>
-          <p class="plan__detalle">15 días seguidos, con clases incluidas.</p>
-          <p class="plan__precio">$45.000</p>
-          <a class="boton boton--linea" data-wa="Hola Bastión, quiero el plan Quincena ($45.000)." href="#">Lo quiero</a>
+          <h3 class="plan__nombre">Semana</h3>
+          <p class="plan__detalle">7 días seguidos.</p>
+          <p class="plan__precio">$35.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el plan Semana ($35.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">15 días</h3>
+          <p class="plan__detalle">15 días seguidos.</p>
+          <p class="plan__precio">$50.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el plan 15 días ($50.000)." href="#">Lo quiero</a>
         </li>
         <li class="plan plan--destacado">
           <p class="plan__etiqueta">El que más se lleva</p>
-          <h3 class="plan__nombre">Mes</h3>
-          <p class="plan__detalle">30 días con clases, valoración física al entrar y rutina del entrenador de sala.</p>
-          <p class="plan__precio">$80.000</p>
-          <a class="boton boton--rojo" data-wa="Hola Bastión, quiero el plan Mes ($80.000)." href="#">Lo quiero</a>
+          <h3 class="plan__nombre">1 mes</h3>
+          <p class="plan__detalle">30 días con toda la sala y las clases grupales.</p>
+          <p class="plan__precio">$78.000</p>
+          <a class="boton boton--rojo" data-wa="Hola Atenas Gym, quiero el plan 1 mes ($78.000)." href="#">Lo quiero</a>
         </li>
         <li class="plan">
-          <h3 class="plan__nombre">Trimestre</h3>
-          <p class="plan__detalle">90 días. Ahorra $25.000 frente a pagar tres meses. Se puede congelar 15 días si viaja.</p>
-          <p class="plan__precio">$215.000</p>
-          <a class="boton boton--linea" data-wa="Hola Bastión, quiero el plan Trimestre ($215.000)." href="#">Lo quiero</a>
+          <h3 class="plan__nombre">2 meses</h3>
+          <p class="plan__detalle">Ahorra $11.000 frente a pagar mes a mes.</p>
+          <p class="plan__precio">$145.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el plan 2 meses ($145.000)." href="#">Lo quiero</a>
         </li>
         <li class="plan">
-          <h3 class="plan__nombre">Tiquetera</h3>
-          <p class="plan__detalle">12 entradas para usar en 45 días. Para quien viene dos o tres veces por semana.</p>
-          <p class="plan__precio">$75.000</p>
-          <a class="boton boton--linea" data-wa="Hola Bastión, quiero la Tiquetera de 12 entradas ($75.000)." href="#">Lo quiero</a>
+          <h3 class="plan__nombre">3 meses</h3>
+          <p class="plan__detalle">Ahorra $30.000 frente a pagar mes a mes.</p>
+          <p class="plan__precio">$204.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el plan 3 meses ($204.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">6 meses</h3>
+          <p class="plan__detalle">Ahorra $90.000 frente a pagar mes a mes.</p>
+          <p class="plan__precio">$378.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el plan 6 meses ($378.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">1 año</h3>
+          <p class="plan__detalle">Ahorra $236.000 frente a pagar mes a mes.</p>
+          <p class="plan__precio">$700.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el plan 1 año ($700.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">Valera 15 días</h3>
+          <p class="plan__detalle">15 entradas para usar a su ritmo.</p>
+          <p class="plan__precio">$60.000</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero la Valera de 15 días ($60.000)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">Plan pareja</h3>
+          <p class="plan__detalle">El mes para dos personas, cada una paga $73.000.</p>
+          <p class="plan__precio">$73.000 c/u</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero el Plan pareja ($73.000 cada uno)." href="#">Lo quiero</a>
+        </li>
+        <li class="plan">
+          <h3 class="plan__nombre">Personalizado</h3>
+          <p class="plan__detalle">Entrenador para usted solo, con plan según su objetivo.</p>
+          <p class="plan__precio">Pregunte</p>
+          <a class="boton boton--linea" data-wa="Hola Atenas Gym, quiero información del entrenamiento personalizado." href="#">Lo quiero</a>
         </li>
       </ul>
-      <p class="nota">Pagos en efectivo, Nequi, Daviplata, Bre-B o tarjeta en recepción.</p>
+      <p class="nota">Pregunte por WhatsApp los medios de pago.</p>
     </section>
 
     <section class="seccion seccion--clara" id="horario" aria-labelledby="t-horario">
       <div class="seccion__cabeza">
         <h2 class="titulo" id="t-horario">Horario</h2>
-        <p>La sala está más tranquila entre las 10:00 a. m. y las 4:00 p. m. El día de hoy va marcado.</p>
+        <p>El día de hoy va marcado.</p>
       </div>
       <table class="semana">
         <caption class="visualmente-oculto">Horario de atención por día</caption>
         <tbody>
-          <tr data-dia="1"><th scope="row">Lunes</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
-          <tr data-dia="2"><th scope="row">Martes</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
-          <tr data-dia="3"><th scope="row">Miércoles</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
-          <tr data-dia="4"><th scope="row">Jueves</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
-          <tr data-dia="5"><th scope="row">Viernes</th><td>5:00 a. m. – 10:00 p. m.</td></tr>
-          <tr data-dia="6"><th scope="row">Sábado</th><td>7:00 a. m. – 3:00 p. m.</td></tr>
-          <tr data-dia="0"><th scope="row">Domingo y festivos</th><td>8:00 a. m. – 12:00 m.</td></tr>
+          <tr data-dia="1"><th scope="row">Lunes</th><td>5:00 a. m. – 11:00 p. m.</td></tr>
+          <tr data-dia="2"><th scope="row">Martes</th><td>5:00 a. m. – 11:00 p. m.</td></tr>
+          <tr data-dia="3"><th scope="row">Miércoles</th><td>5:00 a. m. – 11:00 p. m.</td></tr>
+          <tr data-dia="4"><th scope="row">Jueves</th><td>5:00 a. m. – 11:00 p. m.</td></tr>
+          <tr data-dia="5"><th scope="row">Viernes</th><td>5:00 a. m. – 11:00 p. m.</td></tr>
+          <tr data-dia="6"><th scope="row">Sábado</th><td>8:00 a. m. – 3:00 p. m.</td></tr>
+          <tr data-dia="0"><th scope="row">Domingo y festivos</th><td>9:00 a. m. – 2:00 p. m.</td></tr>
         </tbody>
       </table>
     </section>
 
     <section class="seccion" id="clases" aria-labelledby="t-clases">
       <div class="seccion__cabeza">
-        <h2 class="titulo" id="t-clases">Clases de la semana</h2>
-        <p>Incluidas desde la quincena. Cupo de 15 personas: aparte su puesto por WhatsApp.</p>
+        <h2 class="titulo" id="t-clases">Clases grupales</h2>
+        <p>Aparte su puesto por WhatsApp. <strong>Programación de ejemplo:</strong> aquí van las clases de Atenas.</p>
       </div>
       <ul class="leyenda" aria-label="Tipos de clase">
         <li class="tipo tipo--fuerza">Fuerza</li>
@@ -181,7 +216,7 @@
     <section class="seccion seccion--clara" id="sala" aria-labelledby="t-sala">
       <div class="seccion__cabeza">
         <h2 class="titulo" id="t-sala">La sala</h2>
-        <p>Lo que encuentra al entrar. En la página de su gimnasio van fotos de su sala.</p>
+        <p>1.400 m² con máquinas importadas. Fotos de ejemplo: en la página van las de la sala de Atenas.</p>
       </div>
       <div class="galeria">
         <figure class="galeria__foto galeria__foto--alta"><img src="img/gym-fila.webp" alt="Fila de máquinas de musculación" width="934" height="1400" loading="lazy"><figcaption>Máquinas</figcaption></figure>
@@ -207,11 +242,17 @@
           <label class="campo">
             <span>Plan que le interesa</span>
             <select name="plan">
-              <option>Mes ($80.000)</option>
-              <option>Día ($10.000)</option>
-              <option>Quincena ($45.000)</option>
-              <option>Trimestre ($215.000)</option>
-              <option>Tiquetera ($75.000)</option>
+              <option>1 mes ($78.000)</option>
+              <option>Día ($13.000)</option>
+              <option>Semana ($35.000)</option>
+              <option>15 días ($50.000)</option>
+              <option>2 meses ($145.000)</option>
+              <option>3 meses ($204.000)</option>
+              <option>6 meses ($378.000)</option>
+              <option>1 año ($700.000)</option>
+              <option>Valera 15 días ($60.000)</option>
+              <option>Plan pareja ($73.000 c/u)</option>
+              <option>Personalizado</option>
               <option>Todavía no sé</option>
             </select>
           </label>
@@ -225,7 +266,7 @@
           </fieldset>
           <label class="autoriza">
             <input type="checkbox" name="autoriza" required>
-            <span>Autorizo a Bastión Gym a usar mi nombre para responder esta solicitud (Ley 1581 de 2012).</span>
+            <span>Autorizo a Atenas Gym a usar mi nombre para responder esta solicitud (Ley 1581 de 2012).</span>
           </label>
           <p class="formulario__error" data-error role="alert" hidden></p>
           <button class="boton boton--wa" type="submit">Enviar por WhatsApp</button>
@@ -236,29 +277,29 @@
     <section class="seccion seccion--clara" id="ubicacion" aria-labelledby="t-ubicacion">
       <div class="seccion__cabeza">
         <h2 class="titulo" id="t-ubicacion">Cómo llegar</h2>
-        <p>Calle 5 # 00-00, San Fernando, Cali (dirección de ejemplo). Parqueadero para motos y bicicletas en la entrada.</p>
+        <p>Cra. 15 # 39-57, Chapinero, Cali. Parqueadero privado.</p>
       </div>
       <div class="llegar">
-        <a class="boton boton--linea-oscura" href="https://www.google.com/maps/search/?api=1&amp;query=San+Fernando+Cali" target="_blank" rel="noopener">Abrir en Google Maps</a>
-        <a class="boton boton--linea-oscura" href="https://waze.com/ul?q=San%20Fernando%20Cali" target="_blank" rel="noopener">Abrir en Waze</a>
+        <a class="boton boton--linea-oscura" href="https://www.google.com/maps/search/?api=1&amp;query=Atenas+Gym+Cra.+15+%2339-57+Chapinero+Cali" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        <a class="boton boton--linea-oscura" href="https://waze.com/ul?q=Cra.%2015%20%2339-57%2C%20Chapinero%2C%20Cali" target="_blank" rel="noopener">Abrir en Waze</a>
       </div>
       <div class="preguntas">
         <h3 class="subtitulo">Lo que más preguntan</h3>
         <details>
-          <summary>¿Hay que pagar inscripción?</summary>
-          <p>En noviembre no. El resto del año, $20.000 una sola vez.</p>
+          <summary>¿Tienen parqueadero?</summary>
+          <p>Sí, parqueadero privado para quienes entrenan.</p>
         </details>
         <details>
-          <summary>¿Puedo congelar el plan?</summary>
-          <p>El trimestre se congela hasta 15 días, avisando por WhatsApp antes de viajar.</p>
+          <summary>¿Tienen plan para dos?</summary>
+          <p>Sí, el Plan pareja: $73.000 al mes cada persona.</p>
         </details>
         <details>
-          <summary>¿Me hacen rutina?</summary>
-          <p>Sí. Con el plan mes o el trimestre, el entrenador de sala le hace la valoración y la rutina del primer mes.</p>
+          <summary>¿Tienen entrenamiento personalizado?</summary>
+          <p>Sí. Escríbanos su objetivo y le contamos horarios y valor.</p>
         </details>
         <details>
           <summary>¿Puedo ir a probar?</summary>
-          <p>El primer día es gratis. Escríbanos para apartar la hora.</p>
+          <p>Sí, con el pase de día de $13.000. Escríbanos y le contamos la mejor hora.</p>
         </details>
       </div>
     </section>
@@ -266,12 +307,12 @@
 
   <footer class="pie">
     <div class="pie__gym">
-      <p class="marca marca--pie"><span class="marca__disco" aria-hidden="true"></span><span class="marca__nombre">Bastión</span></p>
-      <p>Gimnasio ficticio de demostración. Fotos de Unsplash y Pexels con licencia libre.</p>
+      <p class="marca marca--pie"><span class="marca__nombre">Atenas <span class="marca__gym">Gym</span></span></p>
+      <p>Maqueta de propuesta, no es la página oficial de Atenas Gym. Fotos de ejemplo de Unsplash y Pexels con licencia libre.</p>
     </div>
     <div class="pie__autor">
-      <h2 class="subtitulo">¿Quiere una página así para su gimnasio?</h2>
-      <p>Con sus planes, su horario, sus fotos y su WhatsApp, lista en 5 días hábiles.</p>
+      <h2 class="subtitulo">¿Le gusta para Atenas?</h2>
+      <p>Con sus planes, su horario, fotos de su sala y su WhatsApp, lista en 7 días hábiles.</p>
       <a class="boton boton--wa" data-wa-autor href="#">Hablar con José David</a>
       <p class="pie__firma">José David Rodríguez Pinilla · Desarrollador web en Cali · <a href="https://josed235.github.io">Portafolio</a></p>
     </div>

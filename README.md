@@ -1,6 +1,10 @@
-# Bastión Gym · página de demostración
+# Atenas Gym · maqueta de propuesta
 
-Página de un **gimnasio ficticio** de Cali para mostrarles a los dueños de gimnasios cómo se vería la suya. En vivo: https://josed235.github.io/gimnasio-demo/
+Maqueta de la página web para **Atenas Gym** (Cra. 15 # 39-57, Chapinero, Cali), hecha el 11-nov-2026 a partir de `gimnasio-demo` (Bastión Gym). No es la página oficial: precios, horarios, clases y fotos son de ejemplo hasta que el gimnasio entregue los suyos. Datos reales usados (de su Instagram @atenasgymcali): lema, Chapinero, 1.400 m², máquinas importadas, clases grupales, parqueadero privado y personalizados.
+
+Precios y horario reales, tomados de sus piezas de Instagram (copias en `referencias/`); el logo está en `img/logo.png` y se usa como ícono. Clases y fotos siguen de ejemplo.
+
+Sin remoto a propósito: el origen era `JOSED235/gimnasio-demo` y un push la habría sobrescrito. Si se publica, crear un repo propio (`atenas-gym-demo`).
 
 Tiene lo que incluye el paquete:
 
@@ -11,7 +15,7 @@ Tiene lo que incluye el paquete:
 - pre-inscripción que arma el mensaje y lo abre en WhatsApp (no guarda datos en ningún servidor), con la autorización de la Ley 1581;
 - cómo llegar (Google Maps y Waze) y preguntas frecuentes.
 
-En la demo, todos los botones de WhatsApp abren un chat con José David. La página lleva `noindex` para que Google no muestre un negocio que no existe.
+En la maqueta, todos los botones de WhatsApp abren un chat con José David. La página lleva `noindex` para que Google no la muestre como si fuera la página oficial del gimnasio.
 
 ## Uso
 
