@@ -1,39 +1,25 @@
 # Atenas Gym · maqueta de propuesta
 
-Maqueta de la página web para **Atenas Gym** (Cra. 15 # 39-57, Chapinero, Cali), hecha el 11-nov-2026 a partir de `gimnasio-demo` (Bastión Gym). No es la página oficial: precios, horarios, clases y fotos son de ejemplo hasta que el gimnasio entregue los suyos. Datos reales usados (de su Instagram @atenasgymcali): lema, Chapinero, 1.400 m², máquinas importadas, clases grupales, parqueadero privado y personalizados.
+Borrador de página web para **Atenas Gym** (Cra. 15 # 39-57, Chapinero, Cali), hecho por José David Rodríguez Pinilla para mostrárselo al gimnasio. **No es su página oficial.** Lleva `noindex` y un aviso arriba.
 
-Precios y horario reales, tomados de sus piezas de Instagram (copias en `referencias/`); el logo está en `img/logo.png` y se usa como ícono. Clases y fotos siguen de ejemplo.
-
-Sin remoto a propósito: el origen era `JOSED235/gimnasio-demo` y un push la habría sobrescrito. Si se publica, crear un repo propio (`atenas-gym-demo`).
-
-Tiene lo que incluye el paquete:
-
-- planes con precio y un botón «Lo quiero» que abre WhatsApp con el plan ya escrito;
-- aviso de «abierto ahora» y el día de hoy marcado en el horario, siempre en hora de Colombia;
-- clases de la semana por tipo;
-- galería de la sala;
-- pre-inscripción que arma el mensaje y lo abre en WhatsApp (no guarda datos en ningún servidor), con la autorización de la Ley 1581;
-- cómo llegar (Google Maps y Waze) y preguntas frecuentes.
-
-En la maqueta, todos los botones de WhatsApp abren un chat con José David. La página lleva `noindex` para que Google no la muestre como si fuera la página oficial del gimnasio.
+- Datos reales, tomados de su Instagram @atenasgymcali (11-nov-2026): lemas, dirección, WhatsApp, tarifas 2026, horario, 1.400 m², máquinas importadas, parqueadero privado y personalizados. Están en `src/data/atenas.js`. Las piezas originales están en `referencias/`, que no se publica.
+- De ejemplo: las fotos de la sala (Unsplash y Pexels, licencia libre) y la sección «App de socios», que muestra el sistema para gimnasios (gym-app) con datos inventados.
+- En la maqueta, los botones de WhatsApp abren chat con José David. Para la página real, cambiar `WHATSAPP` en `src/data/atenas.js` por `573113989665`.
 
 ## Uso
 
-Es HTML, CSS y JavaScript sin compilación: GitHub Pages sirve la carpeta tal cual.
+Astro 7, HTML estático, sin React.
 
 ```bash
-npx http-server -s .   # verla en local (los módulos de JS no cargan con file://)
-npm test               # pruebas del horario y del "abierto ahora"
+npm install
+npm run dev       # http://localhost:4321/atenas-gym-demo/
+npm test          # pruebas del horario y del aviso «abierto ahora»
+npm run build     # genera dist/
+npm run preview   # sirve dist/ como quedaría publicado
 ```
 
-## Para convertirla en la página de un gimnasio real
+## Publicación
 
-1. En `js/main.js`, cambiar `WHATSAPP` por el número de recepción y quitar el texto «(Lo escribo desde la página de demostración)».
-2. En `js/horario.js`, poner su horario y su lista de festivos. Cambiar la tabla del horario en `index.html`.
-3. En `index.html`: nombre, planes, precios, clases, dirección, enlaces de Maps y Waze, y quitar el aviso de demostración y el `noindex`.
-4. Cambiar las fotos de `img/` por fotos de su sala (WebP, máx. 1400 px) y generar `img/og.jpg` (1200 × 630).
-5. Agregar los datos estructurados `ExerciseGym` (JSON-LD) con dirección, horario y teléfono, y conectar el dominio y su ficha de Google Maps.
+Cada push a `main` la publica en https://josed235.github.io/atenas-gym-demo/ con `.github/workflows/deploy.yml`. En el repo: Settings > Pages > Source: **GitHub Actions**.
 
-## Créditos
-
-Fotos de Unsplash y Pexels (uso comercial libre): Ambitious Studio / Rick Barrett, Salman Sidheek, Amari Shutters, Alina Chernysheva, Şule Makaroğlu, LIFE FIT y roodzn. Fuente Archivo (SIL Open Font License).
+No apuntar el remoto a `JOSED235/gimnasio-demo`, de donde salió este repo: un push reemplazaría la demo genérica.
